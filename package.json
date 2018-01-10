@@ -1,0 +1,41 @@
+{
+  "name": "gelb-css",
+  "version": "1.0.0",
+  "description": "GelbCss is a light css framework based in grids. It is the base setup for GelbComponents.",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "node_modules/.bin/webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rcasachi/gelb-css.git"
+  },
+  "keywords": [
+    "gelb",
+    "css",
+    "framework",
+    "less",
+    "light",
+    "webpack",
+    "html"
+  ],
+  "author": "Rafael Alessandro Casachi - aidias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rcasachi/gelb-css/issues"
+  },
+  "homepage": "https://github.com/rcasachi/gelb-css#readme",
+  "devDependencies": {
+    "autoprefixer": "^7.2.4",
+    "css-loader": "^0.28.8",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "less": "^2.7.3",
+    "less-loader": "^4.0.5",
+    "less-plugin-clean-css": "^1.5.1",
+    "postcss-loader": "^2.0.10",
+    "style-loader": "^0.19.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.10.1"
+  }
+}
