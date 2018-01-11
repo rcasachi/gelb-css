@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="../dist/css/gelb.css">
+
+  <title>Hello World!</title>
+  <style>
+  /*
+  // Clearfix
+    @mixin clearfix {
+      &:after {
+        display: table;
+        clear: both;
+        content: '';
+      }
+    }
+
+    // Usage
+    .three-col-grid { @include clearfix; }
+  */
+    .l-wrap {
+      max-width: 1140px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .three-col-grid .grid-item {
+      width: 33.3333%;
+      padding-right: 10px;
+      padding-left: 10px;
+      float: left;
+    }
+    .three-col-grid:after {
+      display: table;
+      clear: both;
+      content: '';
+    }
+    .column {
+      width: calc((100% - 20px * 12) / 12);
+      height: 80px;
+      margin-right: 10px;
+      margin-left: 10px;
+      background: rgba(0, 0, 255, 0.25);
+      float: left;
+    }
+    /*
+    .l-guest-article {
+      @include clearfix;
+      .l-guest {
+        @media (min-width: 700px) {
+          width: percentage(4/12);
+          float: left;
+        }
+
+        @media (min-width: 1200px) {
+          width: percentage(2/12);
+        }
+      }
+      .l-main {
+        margin-top: 20px;
+        @media (min-width: 700px) {
+          width: percentage(8/12);
+          margin-top: 0;
+          float: left;
+        }
+        @media (min-width: 1200px) {
+          width: percentage(7/12);
+        }
+      }
+      .l-sidebar {
+        margin-top: 20px;
+        @media (min-width: 700px) {
+          width: percentage(8/12);
+          float: right;
+        }
+        @media (min-width: 1200px) {
+          width: percentage(3/12);
+          margin-top: 0;
+        }
+      }
+    }
+    */
+    /* .l-guest-article {
+      .l-guest { width: percentage(2/12);}
+      .l-main { width: percentage(7/12);}
+      .l-sidebar { width: percentage(3/12); }
+    } */
+    /* .l-guest-article {
+      @include clearfix;
+      .l-guest {
+        // Ahem. More readable than 16.666% :)
+        width: percentage(2/12);
+        padding-left: 10px;
+        padding-right: 10px;
+        float: left;
+      }
+
+      .l-main {
+        width: percentage(7/12);
+        padding-right: 10px;
+        padding-left: 10px;
+        float: left;
+      }
+
+      .l-sidebar {
+        width: percentage(3/12);
+        padding-right: 10px;
+        padding-left: 10px;
+        float: left;
+      }
+    } */
+
+    /* .l-guest-article {
+      @include clearfix;
+      .l-guest {
+        @media (min-width: 700px) {
+          width: percentage(4/12);
+          float: left;
+        }
+      }
+      .l-main {
+        margin-top: 20px;
+        @media (min-width: 700px) {
+          width: percentage(8/12);
+          margin-top: 0;
+          float: left;
+        }
+      }
+      .l-sidebar {
+        margin-top: 20px;
+        @media (min-width: 700px) {
+          width: percentage(8/12);
+          float: right;
+        }
+      }
+    } */
+  </style>
+</head>
+<body>
+  <div class="l-wrap">
+    <div class="three-col-grid">
+      <div class="grid-item">Grid item</div>
+      <div class="grid-item">Grid item</div>
+      <div class="grid-item">Grid item</div>
+    </div>
+  </div>
+  <div class="fixed-gutter-grid">
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+  </div>
+  <div class="l-guest-article">
+    <div class="l-guest"> <!-- Guest profile --></div>
+    <div class="l-main"><!-- main article--></div>
+    <div class="l-sidebar"><!-- sidebar widgets--></div>
+  </div>
+</body>
+</html>
