@@ -32,7 +32,10 @@ module.exports = {
             {
               loader: "css-loader",
               options: {
-                sourceMap: true
+                sourceMap: true,
+                alias: {
+                  '../../fonts': '../fonts'
+                }
               }
             },
             {
@@ -47,6 +50,13 @@ module.exports = {
           ],
           fallback: "style-loader"
         })
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|svg)$/,
+        loader: 'file-loader',
+        options: {
+          name: 'fonts/[name].[ext]'
+        }
       }
     ]
   },

@@ -16,7 +16,7 @@ time, mark, audio, video{
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-  background: transparent;
+ 	background: transparent;
 }
 html {
   box-sizing: border-box;
@@ -24,7 +24,7 @@ html {
 *,
 *:before,
 *:after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section{
@@ -112,20 +112,14 @@ address,caption,cite,code,dfn,em,strong,th,var{
 <section> This element has been added in HTML5	Define a seção do Documento.
 <nav> This element has been added in HTML5	Define uma seção que contém apenas links de navegação.
 <article> This element has been added in HTML5	Define que pode existir de forma independente do resto do conteúdo. Esta Tag poderia ser um post no fórum, um artigo de revista ou jornal, uma entrada de log da Web, um comentário enviado pelo usuário, ou qualquer outro item independente do conteúdo.
-<aside> This element has been added in HTML5	
-Define um conteúdo reservado do resto do conteúdo da página. Se for removida, o conteúdo restante ainda fazem sentido.
+<aside> This element has been added in HTML5 Define um conteúdo reservado do resto do conteúdo da página. Se for removida, o conteúdo restante ainda fazem sentido.
 
-<h1>,<h2>,<h3>,<h4>,<h5>,<h6>	São elementos que representam os seis níveis de titulos de cabeçalhos dos documentos. Um elemento título descreve brevemente o tema da seção.
 <hgroup> This element has been added in HTML5	Agrupa um conjunto de elementos <h1> a <h6> quando um título tem vários níveis. *tag excluida da documentação do html5 pelo W3C.
 <header> This element has been added in HTML5	Define o cabeçalho de uma página ou seção. Muitas vezes contém um logotipo, o título do site e uma menu de navegação do conteúdo.
 <footer> This element has been added in HTML5	Define o rodapé de uma página ou seção. Muitas vezes contém um aviso de copyright, alguns links para informações legal ou endereços para dar feedback.
-<address>	Define uma seção que contém informações de contato, como endereço e telefone.
 <main>This element has been added in HTML5 Define o conteúdo principal ou importante no documento. Existe apenas um elemento <main> no documento.
 
-<p>	Define uma parte que deve ser exibido como um parágrafo.
 <hr>	Representa uma ruptura temática entre parágrafos de um artigo ou seção ou qualquer conteúdo mais longo.
-<pre>	Indica que o seu conteúdo é pré-formatado e que este formato deve ser preservada.
-<blockquote>	Representa uma citação.
 <ol>	Define uma lista ordenada de itens, que é uma lista que mudam o seu significado, se alterar a ordem dos seus elementos.
 <ul>	Define uma lista não ordenada.
 <li>	Define um item de uma lista ol ou de uma ul.
@@ -139,62 +133,8 @@ O elemento figura representa um conteúdo de fluxo, opcionalmente com um subtít
 <div>	Representa um contêiner genérico sem nenhum significado especial.
 
 <a>	Representa um hyperlink, ligando a outro recurso.
-<em>	Representa a ênfase do conteudo.
-<strong>	Representa a importância de um pedaço de texto com o forte elemento não altera o sentido da frase.
-<small>	
-Representa lado comentário , que é o texto como um aviso legal, um autor que não é essencial para a compreensão do documento.
 
-<s>	
-Representa o conteúdo que é nolonger precisos e pertinentes.
-
-<cite>	
-Representa o título de uma obra.
-
-<q>	
-Representa um inline quotation.
-
-<dfn>	
-Representa um termo cuja definição está contida em seu conteúdo ancestral mais próximo.
-
-<abbr>	
-Representa uma abreviatura ou acrônimo , eventualmente, com o seu significado .
-
-<data> This element has been added in HTML5	Associa o seu conteúdo a um equivalente legível por máquina.(Este elemento está apenas na versão padrão HTML do WHATWG, e não documentado na versão HTML5 da W3C).
-<time> This element has been added in HTML5	 Representa um valor de data e hora, eventualmente com um equivalente legível por máquina.
-<code>	Representa uma codificação
-<var>	Representa uma variável, que pode ser uma expressão matemática, ou código de programação, um identificador representando uma constante, um símbolo identificando  uma quantificação física um parâmetro de função ou um mero placeholder.
-<samp>	Representa uma saída de um programa de computador.
-<kbd>	
-Representa uma entrada do usuário, geralmente pelo teclado, mas não necessariamente, podendo representar outro tipo de entrada como comandos de voz transcritos.
-
-<sub>,<sup>	Representa subscrito e sobrescrito respectivamente
-<i>	
-Representa texto em uma voz ou humor alternativo ou em uma qualidade diferente.
-
-Exemplos são : denominações taxonômica, termos técnicos, expressões idiomáticas, pensamentos ou o nome de um barco.
-
-<b>	Representa um texto que a que chama a atenção para fins utilitários. Ele não transmite importância extra e não implica uma voz alternativa.
-<u>	Representsunarticulate non-textual annoatation, such labeling the text as being misspelt or labeling a proper name in Chinese text.
-<mark> This element has been added in HTML5	Representa texto destacado para fins de referência, que é por sua relevância em outro contexto.
-<ruby> This element has been added in HTML5	
-Representa uma anotação que é usada como anexo para os textos principais para Indicar uma  Pronúncia ou o significado dos caracteres.O ruby é muito usado  para publicações no Leste Asiático.
-
-Exemplo:O furigana japonês.
-
-<rt> This element has been added in HTML5	Usado para anotações em ruby.
-<rp> This element has been added in HTML5	
-Representa uma anotação ruby,Que vai ser usado para exibir  anotações ruby em navegadores que não tem suporte padrão para exibição de anotações.
-
-<bdi> This element has been added in HTML5	Represents text that must beisolated from its surrounding for bidirectional text formatting. It allows to embed span of text with a different, or unknown, directionality.
-<bdo>	Represents the directionality of its children, in order to explicitly override the Unicode bidirectional algorithm.
-<span>	
-Representa um texto sem significado. Ele deve ser usado quando nenhum outro elemento de texto semântico representar um significado adequado.
-
-<br>	Representa uma quebra de linha.
-<wbr> This element has been added in HTML5	Represents a line break opportunity , that is a suggested wrapping point in order to improve readability of text split on several lines.
-
-<ins>	Define um complemento para o documento
-<del>	Define uma remoção do documento
+	
 
 <img>	Representa uma imagem.
 <iframe>	
