@@ -1,0 +1,81 @@
+//Rows
+.row{
+	clear: both;
+	padding: 0;
+	margin: 0;
+}
+//Columns
+[class^="col"]{
+	display: block;
+	float: left;
+	margin: 0 0 0 1%;
+}
+[class^="col"]:first-child{
+	margin-left: 0;
+}
+[class^="col"]:before,
+[class^="col"]:after{
+	content: "";
+	display: table;
+}
+[class^="col"]:after{
+	clear: both;
+}
+[class^="col"]{
+	zoom: 1;
+}
+.col-12{
+	width: 100%;
+}
+.col-11{
+  	width: 91.58%;
+}
+.col-10{
+  	width: 83.16%;
+}
+.col-9{
+  	width: 74.75%;
+}
+.col-8{
+  	width: 66.33%;
+}
+.col-7{
+  	width: 57.91%;
+}
+.col-6{
+  	width: 49.5%;
+}
+.col-5{
+  	width: 41.08%;
+}
+.col-4{
+  	width: 32.66%;
+}
+.col-3{
+  	width: 24.25%;
+}
+.col-2{
+  	width: 15.83%;
+}
+.col-1{
+  	width: 7.416%;
+}
+@media only screen and (max-width: 480px) {
+	.col{
+		margin: 0;
+	}
+    .col-1,
+    .col-2,
+    .col-3,
+    .col-4,
+    .col-5,
+    .col-6,
+    .col-7,
+    .col-8,
+    .col-9,
+    .col-10,
+    .col-11,
+    .col-12{
+		width: 100%; 
+	}
+}
