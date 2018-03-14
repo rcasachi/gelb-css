@@ -8,14 +8,88 @@
   <title>Typography</title>
 </head>
 <body>
-	<h1>Gelb Heading 1</h1>
-	<h2>Gelb Heading 2</h2>
-	<h3>Gelb Heading 3</h3>
-	<h4>Gelb Heading 4</h4>
-	<h5>Gelb Heading 5</h5>
-	<h6>Gelb Heading 6</h6>
+	<h1>Typography</h1>
+	<p>We list below the full documentation of GelbCSS typography.</p>
+	
+	<h2>Native font stack</h2>
+	<p>GelbCSS uses a native font stack based on Medium and Bootstrap +4 to select the best <code>font-family</code> for each OS and device.</p>
+	<pre><code>
+		font-family: 
+			-apple-system, // Safari for OS X and iOS (San Francisco)
+			BlinkMacSystemFont, // Chrome < 56 for OS X (San Francisco)
+			"Segoe UI", // Windows
+			"Roboto", // Android
+			"Oxygen", // KDE
+			"Ubuntu", // Ubuntu
+			"Cantarell", // GNOME
+			"Fira Sans", // Firefox OS
+			"Droid Sans", // older versions of Android
+			"Helvetica Neue", "Arial", sans-serif; // Basic web fallback
+	</code></pre>
 
-	<address></address>
+	<h2>Headings</h2>
+	<table>
+		<thead>
+			<tr>
+				<td>Heading</td>
+				<td>Example</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td><code>&lt;h1&gt;&lt;/h1&gt;</code></td>
+				<td><h1>Gelb Heading 1</h1></td>
+			</tr>
+			<tr>
+				<td><code>&lt;h2&gt;&lt;/h2&gt;</code></td>
+				<td><h2>Gelb Heading 2</h2></td>
+			</tr>
+			<tr>
+				<td><code>&lt;h3&gt;&lt;/h3&gt;</code></td>
+				<td><h3>Gelb Heading 3</h3></td>
+			</tr>
+			<tr>
+				<td><code>&lt;h4&gt;&lt;/h4&gt;</code></td>
+				<td><h4>Gelb Heading 4</h4></td>
+			</tr>
+			<tr>
+				<td><code>&lt;h5&gt;&lt;/h5&gt;</code></td>
+				<td><h5>Gelb Heading 5</h5></td>
+			</tr>
+			<tr>
+				<td><code>&lt;h6&gt;&lt;/h6&gt;</code></td>
+				<td><h6>Gelb Heading 6</h6></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<p>As in bootstrap, the <code>.h1</code> through <code>.h6</code> classes are also available, for when you want to match the font styling of a heading but cannot use the associated HTML:</p>
+	<p class="h1">H1 GelbCss class heading</p>
+	<p class="h2">H2 GelbCss class heading</p>
+	<p class="h3">H3 GelbCss class heading</p>
+	<p class="h4">H4 GelbCss class heading</p>
+	<p class="h5">H5 GelbCss class heading</p>
+	<p class="h6">H6 GelbCss class heading</p>
+	
+	<h2>Using small</h2>
+	<h1>Heading One <small>with a small element</small></h1>
+	<h2>Heading Two <small>with a small element</small></h2>
+	<h3>Heading Three <small>with a small element</small></h3>
+	<h4>Heading Four <small>with a small element</small></h4>
+	<h5>Heading Five <small>with a small element</small></h5>
+	<h6>Heading Six <small>with a small element</small></h6>
+	<h1>Heading One <small class="text-thin text-muted">with a custom thin muted element</small></h1>
+
+	
+	
+	
+
+	<address>
+		<strong>Get Aidias, Inc.</strong><br>
+		88 Atenas St, Jardins<br>
+		Sao Paulo, SP, Brazil<br>
+		Phone: +55 (11) 3355-1654
+	</address>
 
 	<p>Indica que o seu conteúdo é pré-formatado e que este formato deve ser preservada.</p>
 
